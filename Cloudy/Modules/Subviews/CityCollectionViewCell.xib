@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CityCollectionViewCell" customModule="Cloudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSB-ZF-IWs">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="168"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-3Q-Tyn">
+                                <rect key="frame" x="20" y="20" width="156" height="128"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.57027792930603027" green="0.45658630132675171" blue="0.64574670791625977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67724126577377319" green="0.7154536247253418" blue="0.80764204263687134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8zQ-3Q-Tyn" firstAttribute="top" secondItem="WSB-ZF-IWs" secondAttribute="top" constant="20" id="8ab-7R-tkN"/>
+                            <constraint firstAttribute="bottom" secondItem="8zQ-3Q-Tyn" secondAttribute="bottom" constant="20" id="9sZ-94-HEh"/>
+                            <constraint firstItem="8zQ-3Q-Tyn" firstAttribute="leading" secondItem="WSB-ZF-IWs" secondAttribute="leading" constant="20" id="DgG-WS-mJH"/>
+                            <constraint firstAttribute="trailing" secondItem="8zQ-3Q-Tyn" secondAttribute="trailing" constant="20" id="vo8-jG-ikA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WSB-ZF-IWs" secondAttribute="trailing" id="6Ks-rM-qI4"/>
+                <constraint firstItem="WSB-ZF-IWs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="71a-kx-Uw6"/>
+                <constraint firstAttribute="bottom" secondItem="WSB-ZF-IWs" secondAttribute="bottom" id="8r8-dY-AFM"/>
+                <constraint firstItem="WSB-ZF-IWs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PWm-oj-WdJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="196" height="168"/>
+            <connections>
+                <outlet property="cityNameLabel" destination="8zQ-3Q-Tyn" id="WQd-9G-LKx"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="-5"/>
+        </collectionViewCell>
+    </objects>
+</document>
