@@ -52,7 +52,7 @@ extension ForecastDataManager {
                         weakSelf.view.activityIndicatorStopAnimating()
                     }
                 } catch {
-                    print(error)
+                    weakSelf.view.showNoDataAlert()
                 }
             } else {
                 weakSelf.view.showNoDataAlert()
